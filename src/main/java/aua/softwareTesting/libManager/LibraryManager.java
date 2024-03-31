@@ -20,7 +20,7 @@ public class LibraryManager {
     }
 
     public void checkOutBook(String title) {
-        if (title.isEmpty() || !library.contains(title)) {
+        if (!library.contains(title)) {
             throw new IllegalArgumentException("Book not found");
         }
         library.remove(title);

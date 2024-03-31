@@ -29,7 +29,8 @@ public class LibraryManagerTest {
     @Test(expected = IllegalArgumentException.class)
     public void testCheckOutNonExistingBook() {
         LibraryManager libraryManager = new LibraryManager();
-        libraryManager.checkOutBook("Non-existing book");
+        libraryManager.addBook("The Great Gatsby");
+        libraryManager.checkOutBook("1984");
     }
 
     @Test
